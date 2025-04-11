@@ -10,6 +10,10 @@ let package = Package(
         .library(
             name: "ACNetworkKit",
             targets: ["ACNetworkKit"]),
+        .library(
+            name: "ACNetworkKit",
+            type: .dynamic,
+            targets: ["ACNetworkKit"])
     ],
     dependencies: [],
     targets: [
