@@ -48,6 +48,7 @@ public class NetworkClient: NetworkClientProtocol {
 
                let (data, response) = try await URLSession.shared.data(for: req)
 
+                print(String.init(data: data, encoding: .utf8))
                guard let httpResponse = response as? HTTPURLResponse,
                      200..<300 ~= httpResponse.statusCode else {
                    throw URLError(.badServerResponse)
