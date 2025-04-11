@@ -9,9 +9,6 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "ACNetworkKit",
-            targets: ["ACNetworkKit"]),
-        .library(
-            name: "ACNetworkKit",
             type: .dynamic,
             targets: ["ACNetworkKit"])
     ],
